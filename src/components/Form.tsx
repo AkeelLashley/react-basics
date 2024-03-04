@@ -6,7 +6,7 @@ const Form = () => {
   const [message, setMessage] = useState<string>("");
 
   //   Create a handle submit function which basically console.log the states as one line prevent the default behavior from happening
-
+// pass events as a parameter which takes the type React.FormEvent<HTMLFormElement>
   return (
     <div>
       <form action="">
