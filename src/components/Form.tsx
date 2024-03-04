@@ -10,10 +10,15 @@ const Form = () => {
   return (
     <div>
       <form action="">
-        {/* update each state everytime the user enters a keystroke */}
-        <input type="text" value={name} />
-        <input type="email" value={email} />
-        <textarea value={message}></textarea>
+        {/* update each state everytime the user enters a keystroke (onChange)*/}
+        <input
+          type="text"
+          value={name}
+          placeholder="Name"
+        //   onChange={setName(/*Event Target Value*/)}
+        />
+        <input type="email" value={email} placeholder="Email" />
+        <textarea value={message} placeholder="message..."></textarea>
         {/* 1. Submitting the form (console log the values from the state*/}
         <button type="submit">Submit</button>
       </form>

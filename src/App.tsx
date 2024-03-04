@@ -1,5 +1,6 @@
 //A function which returns html
 import Counter from "./components/Counter";
+import Form from "./components/Form";
 import Greeting from "./components/Greeting";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         handleClick={handleClick}
       />
       <Counter />
+      <Form />
     </>
   );
 };
