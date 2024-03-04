@@ -5,7 +5,7 @@ const Form = () => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
-  //   Create a handle submit function which basically console.log the states as one line
+  //   Create a handle submit function which basically console.log the states as one line prevent the default behavior from happening
 
   return (
     <div>
@@ -15,7 +15,7 @@ const Form = () => {
           type="text"
           value={name}
           placeholder="Name"
-        //   onChange={setName(/*Event Target Value*/)}
+          //   onChange={setName(/*Event Target Value*/)}
         />
         <input type="email" value={email} placeholder="Email" />
         <textarea value={message} placeholder="message..."></textarea>
